@@ -1,0 +1,22 @@
+header ul  
+{
+  display:flex;
+  list-style: none;
+  justify-content: center;
+}
+header
+{
+  width: 100%;
+  height: auto;
+  background-color: green;
+}
+header ul li 
+{
+  margin: 20px;
+}
+
+table
+{
+  display: flex;
+justify-content: center;
+}

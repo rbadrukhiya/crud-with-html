@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <header>
+
+        <ul>
+          <li><a href="/"> home </a></li>
+          <li><a href="show"> show </a></li>
+        </ul>
+      </header>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>edit</th> 
+            <th>delete</th>
+        </tr>
+
+        <% alldata.forEach((data )=>{%>
+            <tr>
+                <td><%- data._id%></td>
+                <td><%- data.name%></td>
+                <td><%- data.email%></td>
+                <td><a href="/edit/<%= data._id %>">edit</a></td>
+                <td><a href="/delete/<%= data._id %>">delete</a></td> 
+            </tr>
+       <% })%>
+    </table>
+
+
+</body>
+
+</html>
